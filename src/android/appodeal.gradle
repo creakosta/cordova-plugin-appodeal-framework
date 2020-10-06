@@ -12,8 +12,11 @@ repositories {
 }
 
 dependencies {
-	// Appodeal SDK
-	implementation ('com.appodeal.ads:sdk:2.6.4.+') {
-        exclude group: 'com.appodeal.ads.sdk.networks', module: 'vungle'
+    implementation ('com.appodeal.ads:sdk:2.8.0.+') {
+        exclude group: 'com.appodeal.ads.sdk.networks', module: 'appodeal'
+        exclude group: 'com.appodeal.ads.sdk.networks', module: 'mraid'
+        exclude group: 'com.appodeal.ads.sdk.networks', module: 'nast'
+        exclude group: 'com.appodeal.ads.sdk.networks', module: 'smaato'
+        exclude group: 'com.appodeal.ads.sdk.networks', module: 'vast'
     }
 }
