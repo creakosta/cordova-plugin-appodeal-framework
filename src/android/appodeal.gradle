@@ -13,7 +13,6 @@ repositories {
 
 dependencies {
     implementation ('com.appodeal.ads:sdk:2.8.0.+') {
-        exclude group: 'com.appodeal.ads.sdk.networks', module: 'appodeal'
         exclude group: 'com.appodeal.ads.sdk.networks', module: 'facebook'
         exclude group: 'com.appodeal.ads.sdk.networks', module: 'mraid'
         exclude group: 'com.appodeal.ads.sdk.networks', module: 'nast'
