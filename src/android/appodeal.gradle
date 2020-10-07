@@ -12,11 +12,11 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.appodeal.ads.sdk:core:2.7.3'
-    implementation 'com.appodeal.ads.sdk.networks:adcolony:2.7.3.7'
-    implementation 'com.appodeal.ads.sdk.networks:applovin:2.7.3.6'
-    implementation 'com.appodeal.ads.sdk.networks:admob:2.7.3.5'
-    implementation 'com.appodeal.ads.sdk.networks:ironsource:2.7.3.6'
-    implementation 'com.appodeal.ads.sdk.networks:unity_ads:2.7.3.6'
-    implementation 'com.appodeal.ads.sdk.networks:vungle:2.7.3.3'
+    implementation ('com.appodeal.ads:sdk:2.7.3.+') {
+        exclude group: 'com.appodeal.ads.sdk.networks', module: 'facebook'
+        exclude group: 'com.appodeal.ads.sdk.networks', module: 'inmobi'
+        exclude group: 'com.appodeal.ads.sdk.networks', module: 'nast'
+        exclude group: 'com.appodeal.ads.sdk.networks', module: 'smaato'
+        exclude group: 'com.appodeal.ads.sdk.networks', module: 'tapjoy'
+    }
 }
