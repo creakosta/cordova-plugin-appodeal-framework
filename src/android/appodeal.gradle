@@ -12,6 +12,11 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.appodeal.ads.sdk:core:2.7.3'
-    implementation 'com.appodeal.ads.sdk.networks:facebook:2.7.3.5'
+    implementation ('com.appodeal.ads:sdk:2.7.3.+') {
+        exclude group: 'com.appodeal.ads.sdk.networks', module: 'facebook'
+        exclude group: 'com.appodeal.ads.sdk.networks', module: 'inmobi'
+        exclude group: 'com.appodeal.ads.sdk.networks', module: 'nast'
+        exclude group: 'com.appodeal.ads.sdk.networks', module: 'smaato'
+        exclude group: 'com.appodeal.ads.sdk.networks', module: 'tapjoy'
+    }
 }
